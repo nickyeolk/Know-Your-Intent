@@ -1,8 +1,13 @@
 # Know your Intent : Intent Classification Using Semantic Hashing
+This project builds upon the forked repository to experiment with different methods of classifying intent. A variety of different methods were tried, and average results reported below. The BERT model was able to match the average state of the art results at 0.92.
+The original repo was based on the implementation of [Subword Semantic Hashing for Intent Classification on Small Datasets](https://arxiv.org/abs/1810.07150).  
 
-Implementation of [Subword Semantic Hashing for Intent Classification on Small Datasets](https://arxiv.org/abs/1810.07150).
-
-
+## Methods tested
+1. tfidf baseline model
+2. Comparing cosine distance of averaged word vectors
+3. BERT pretrained model, Chatbot:1.0 AskUbuntu:0.91 WebApplication:0.86 Average:0.92  
+  
+Reference:
 ```
 @article{shridhar2018subword,
   title={Subword Semantic Hashing for Intent Classification on Small Datasets},
